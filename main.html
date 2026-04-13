@@ -2,56 +2,86 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Game Statistics</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Replaces cellspacing="0" */
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling the Head */
+        thead {
+            background-color: #3f4f8b;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px; /* Replaces cellpadding */
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* zebra-striping for rows */
+        tbody tr:nth-child(even) {
+            background-color: lightgrey;
+        }
+
+        /* Hover effect for better UX */
+        tbody tr:hover {
+            background-color: #e2e8f0;
+        }
+    </style>
 </head>
 <body>
-    <!-- add table here -->
-<table cellpadding="10px" cellspacing="0" width="100%">
-	<tr bgcolor="#3f4f8b" id="tr1">
-		<th><font color="white">NAME</th>
-		<th><font color="white">KILLS</th>
-		<th><font color="white">SAVED</th>
-		<th><font color="white">DEATHS</th>
-		<th><font color="white">REVIVES</th>
-		<th><font color="white">WIN</th>
-	</tr>
-	<tr>
-		<td>Hackerman</td>
-		<td>10</td>
-		<td>0</td>
-		<td>1</td>
-		<td>0</td>
-		<td>0</td>
-	</tr>
-	<tr bgcolor="lightgrey">
-		<td>Cool Doggo</td>
-		<td>13</td>
-		<td>4</td>
-		<td>8</td>
-		<td>7</td>
-		<td>1</td>
-	</tr>
-	<tr>
-		<td>Andrews</td>
-		<td>19</td>
-		<td>2</td>
-		<td>10</td>
-		<td>11</td>
-		<td>0</td>
-	</tr>
-	<tr bgcolor="lightgrey">
-		<td>Strawberry</td>
-		<td>2</td>
-		<td>9</td>
-		<td>3</td>
-		<td>5</td>
-		<td>1</td>
-	</tr>
-	
-</table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>KILLS</th>
+                <th>SAVED</th>
+                <th>DEATHS</th>
+                <th>REVIVES</th>
+                <th>WIN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hackerman</td>
+                <td>10</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Cool Doggo</td>
+                <td>13</td>
+                <td>4</td>
+                <td>8</td>
+                <td>7</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>Andrews</td>
+                <td>19</td>
+                <td>2</td>
+                <td>10</td>
+                <td>11</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Strawberry</td>
+                <td>2</td>
+                <td>9</td>
+                <td>3</td>
+                <td>5</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
         
 </body>
 </html>
